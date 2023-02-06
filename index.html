@@ -1,12 +1,176 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth" lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            screens: {
+            'xs':'370px',         
+            'sm': '460px',
+            'md': '750px',
+            'lg': '1080px',
+            'xl': '1280px',
+            '2xl': '1536px',
+    },
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                herocolor:'#fbf7ed',
+                shopicolor:'#014d3f',
+                shopidark:'#012e24',
+                btncol:'#008060'
+              }
+            }
+          }
+        }
+      </script>
 </head>
-<body>
-  
+<body class="font-[Roboto] bg-[#fffefe]">
+
+  <!-- Nav Bar -->
+  <div class="flex h-[4rem] px-4 items-center justify-between bg-herocolor sticky top-0 xl:static xl:h-[2rem] xl:w-[70rem] xl:mx-auto" >
+    <div>
+      <img src="assets/logo.png" class="h-[2rem] xl:hidden" />
+    </div>
+    <div class="flex justify-between w-[3.5rem] items-center w-[5rem]">
+      <div class="flex items-center font-medium text-gray-600">
+        Login
+      </div>
+      <div class="flex gap-[5px] flex-col cursor-pointer">
+        <div class="bg-gray-800 w-[21px] h-[2px]"></div>
+        <div class="bg-gray-800 w-[21px] h-[2px]"></div>
+        <div class="bg-gray-800 w-[21px] h-[2px]"></div>
+      </div>
+    </div> 
+  </div>
+  <!-- Nav Bar Ends -->
+
+  <!-- Header -->
+  <div class="flex flex-col px-6 pt-12 pb-6 bg-herocolor">
+    <div>
+      <h1 class="text-shopicolor font-black text-[2rem] mb-7">The easiest way to sell online in India</h1>
+      <p class="text-[1.2rem] text-gray-500 mb-7">Try one of the most powerful platforms on the market for free. No technical knowledge needed.</p>
+      <form action="" class="mb-12">
+        <input type="text" name="" id=""  placeholder="Enter your email address" class="px-4 py-4 w-[100%] border-[1px] border-black rounded mb-4">
+        <button class="w-[100%] px-4 py-4 bg-btncol rounded text-white font-medium">Try for free</button>
+      </form>
+      <p class="text-sm">
+        Try Shopify free for 14 days, no credit card required. By entering your email, you agree to receive marketing emails from Shopify.
+      </p>
+    </div>
+    <div>
+      <video src="./assets/hero-v1.webm" autoplay="autoplay"></video>
+    </div>
+  </div>
+  <!-- Header Ends -->
+
+  <div class="flex flex-col px-6 pt-12 pb-6 bg-shopicolor">
+    <div class="mb-2">
+      <h2 class="text-white text-[2rem]">Bring your business online</h2>
+    </div>
+    <div class="text-white mb-6">
+      <p class=" text-[1.1rem] mb-2">Create an ecommerce website backed by powerful tools that help you find customers, drive sales, and manage your day-to-day.</p>
+      <a href="" class="font-medium">Explore more examples
+        <i class="fa-solid fa-arrow-right "></i>
+      </a>
+    </div>
+
+    <div class="flex flex-wrap justify-between text-white text-[0.85rem] font-semibold mb-12">
+      <div class="p-1 w-[50%] mb-4">
+        <div>
+          <img src="./assets/home-example-small-4144844351e226a9896cffee4bebdaeecb17897116c33a753bfd086b8b621e74.jpeg" alt="" >
+        </div>
+        <div>
+          <a href="">FOOD & DRINK</a>
+          <p>Blue Tokai</p>
+        </div>
+      </div>
+
+      <div class="p-1 w-[50%] mb-4">
+        <div>
+          <img src="./assets/home-example-small-8b1c6b138414b76150e6e00f5143c4301a07b708aa6113dd7096f4340ddfecad.jpeg" alt="">
+        </div>
+        <div>
+          <a href="">JEWELRY</a>
+          <p>Quirksmith</p>
+        </div>
+      </div>
+
+      <div class="p-1 w-[50%] mb-4">
+        <div>
+          <img src="./assets/home-example-small-099933088cbe804543fbb1b0963a5d0a16365e73e6000949b5b0ab2bf4b21503.jpeg" alt="">
+        </div>
+        <div>
+          <a href="">ELECTRONICS</a>
+          <p>Crossbeats</p>
+        </div>
+      </div>
+
+      <div class="p-1 w-[50%] mb-4">
+        <div>
+          <img src="./assets/home-example-small-26afc247af7a3a7b1c9c585a645ccdff26e76156e98be7d9ff0fe9ecd4d3b675.jpeg" alt="">
+        </div>
+        <div>
+          <a href="">BEAUTY</a>
+          <p>Mcaffeine</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="mb-12">
+      <h2 class="text-white text-[1.5rem]">Take the best path forward</h2>
+    </div>
+
+    <div class="flex flex-wrap justify-between text-white text-[0.85rem] font-semibold mb-12">
+      <div class="mb-8">
+        <div>
+          <img src="./assets/icon2.jpg" alt="" class="w-8 mb-4">
+        </div>
+        <h3 class="text-[1rem] mb-2">Start an online business</h3>
+        <p class="text-[1rem] font-normal mb-2">Create a business, whether you've got a fresh idea or are looking for a new way to make money.</p>
+      </div>
+
+      <div class="mb-8">
+        <div>
+          <img src="./assets/icon3.jpg" alt="" class="w-8 mb-4">
+        </div>
+        <h3 class="text-[1rem] mb-2">Move your business online</h3>
+        <p class="text-[1rem] font-normal mb-2">Turn your retail store into an online store and keep serving customers without missing a beat.</p>
+      </div>
+
+      <div class="mb-8">
+        <div>
+          <img src="./assets/icon4.jpg" alt="" class="w-8 mb-4">
+        </div>
+        <h3 class="text-[1rem] mb-2">Switch to Shopify</h3>
+        <p class="text-[1rem] font-normal mb-2">Bring your business to Shopify, no matter which ecommerce platform you're currently using.</p>
+      </div>
+
+      <div class="mb-8">
+        <div>
+          <img src="./assets/icon1.jpg" alt="" class="w-8 mb-4">
+        </div>
+        <h3 class="text-[1rem] mb-2">Hire a Shopify expert</h3>
+        <p class="text-[1rem] font-normal mb-2">Get set up with the help of a trusted freelancer or agency from the Shopify Experts Marketplace.</p>
+      </div>
+      
+    </div>
+
+
+
+
+
+  </div>
+
 </body>
 </html>
